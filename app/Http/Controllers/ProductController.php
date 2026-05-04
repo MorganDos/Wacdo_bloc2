@@ -67,7 +67,7 @@ class ProductController extends Controller
         if ($product->orders()->exists() || $product->menus()->exists()) {
             return redirect()
                 ->route('products.index')
-                ->with('error', 'Ce produit est utilise dans une commande ou un menu. Passez-le en rupture au lieu de le supprimer.');
+                ->with('error', 'Ce produit est utilisé dans une commande ou un menu. Passez-le en rupture au lieu de le supprimer.');
         }
 
         $product->delete();

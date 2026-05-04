@@ -1,6 +1,6 @@
 # Wakdo Back Office
 
-Application Laravel realisée pour le Bloc 2.
+Application Laravel réalisée pour le Bloc 2.
 
 Le projet correspond au back-office interne de Wakdo. Il permet de :
 
@@ -39,11 +39,22 @@ php artisan serve
 - `prep@wakdo.test` / `password`
 - `cashier@wakdo.test` / `password`
 
+## API
+
+L'API n'est pas appelée par le back-office Blade, mais elle utilise les mêmes modèles et la même base de données.
+
+Routes disponibles :
+
+- `GET /api/products` : liste les produits disponibles.
+- `GET /api/products?category=burger` : filtre les produits par catégorie.
+- `GET /api/menus` : liste les menus actifs avec leur composition.
+- `POST /api/orders` : crée une commande en attente.
+
+Une page de test est disponible après connexion : /api-demo
+
 ## Tests
 
-```bash
 php artisan test
-```
 
 ## Documents de rendu
 
@@ -56,4 +67,4 @@ php artisan test
 ## URL
 
 - URL de l'application déployée : http://wdobackoffice.great-site.net/
-- URL du dépot public : https://github.com/MorganDos/Wacdo_bloc2
+- URL du dépôt public : https://github.com/MorganDos/Wacdo_bloc2

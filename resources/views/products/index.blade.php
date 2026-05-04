@@ -33,9 +33,9 @@
                         <tr>
                             <th class="px-6 py-3 text-left font-medium text-gray-600">Image</th>
                             <th class="px-6 py-3 text-left font-medium text-gray-600">Nom</th>
-                            <th class="px-6 py-3 text-left font-medium text-gray-600">Categorie</th>
+                            <th class="px-6 py-3 text-left font-medium text-gray-600">Catégorie</th>
                             <th class="px-6 py-3 text-left font-medium text-gray-600">Prix</th>
-                            <th class="px-6 py-3 text-left font-medium text-gray-600">Disponibilite</th>
+                            <th class="px-6 py-3 text-left font-medium text-gray-600">Disponibilité</th>
                             <th class="px-6 py-3 text-left font-medium text-gray-600">Actions</th>
                         </tr>
                     </thead>

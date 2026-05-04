@@ -38,7 +38,7 @@ class MenuController extends Controller
         [$data, $pivotData] = $this->validatedPayload($request);
         $isActive = $request->boolean('is_active');
 
-        // On cree le menu et sa composition dans la meme transaction.
+        // On crée le menu et sa composition dans la même transaction.
         DB::transaction(function () use ($data, $pivotData, $isActive): void {
             $menu = Menu::create([
                 'name' => $data['name'],
@@ -106,7 +106,7 @@ class MenuController extends Controller
             'quantities.*' => 'nullable|integer|min:1',
         ]);
 
-        // Prepare les lignes de la table pivot menu_product.
+        // Prépare les lignes de la table pivot menu_product.
         $pivotData = [];
         foreach ($data['product_ids'] as $productId) {
             $pivotData[(int) $productId] = [

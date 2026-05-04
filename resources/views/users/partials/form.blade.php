@@ -36,7 +36,7 @@
         </div>
 
         <div class="space-y-2">
-            <label for="role" class="block text-sm font-medium text-gray-700">Role</label>
+            <label for="role" class="block text-sm font-medium text-gray-700">Rôle</label>
             <select
                 id="role"
                 name="role"
@@ -44,7 +44,7 @@
                 required
             >
                 <option value="admin" @selected(old('role', $user->role) === 'admin')>Admin</option>
-                <option value="prep" @selected(old('role', $user->role) === 'prep')>Preparation</option>
+                <option value="prep" @selected(old('role', $user->role) === 'prep')>Préparation</option>
                 <option value="cashier" @selected(old('role', $user->role) === 'cashier')>Comptoir</option>
             </select>
             @error('role')

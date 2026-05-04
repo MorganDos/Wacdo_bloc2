@@ -33,7 +33,7 @@
                         <tr>
                             <th class="px-6 py-3 text-left font-medium text-gray-600">Nom</th>
                             <th class="px-6 py-3 text-left font-medium text-gray-600">Adresse e-mail</th>
-                            <th class="px-6 py-3 text-left font-medium text-gray-600">Role</th>
+                            <th class="px-6 py-3 text-left font-medium text-gray-600">Rôle</th>
                             <th class="px-6 py-3 text-left font-medium text-gray-600">Actions</th>
                         </tr>
                     </thead>
@@ -46,7 +46,7 @@
                                     <span class="inline-flex border border-gray-300 px-2 py-1 text-xs font-medium text-gray-700">
                                         {{ match ($user->role) {
                                             'admin' => 'administrateur',
-                                            'prep' => 'preparation',
+                                            'prep' => 'préparation',
                                             'cashier' => 'comptoir',
                                             default => $user->role,
                                         } }}

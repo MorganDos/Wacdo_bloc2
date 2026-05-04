@@ -33,7 +33,7 @@
                         <tr>
                             <th class="px-6 py-3 text-left font-medium text-gray-600">Nom</th>
                             <th class="px-6 py-3 text-left font-medium text-gray-600">Prix</th>
-                            <th class="px-6 py-3 text-left font-medium text-gray-600">Etat</th>
+                            <th class="px-6 py-3 text-left font-medium text-gray-600">État</th>
                             <th class="px-6 py-3 text-left font-medium text-gray-600">Composition</th>
                             <th class="px-6 py-3 text-left font-medium text-gray-600">Actions</th>
                         </tr>

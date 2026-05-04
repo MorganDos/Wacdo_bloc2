@@ -74,9 +74,9 @@
                     <tr>
                         <th class="px-4 py-3 text-left font-medium text-gray-600">Choisir</th>
                         <th class="px-4 py-3 text-left font-medium text-gray-600">Produit</th>
-                        <th class="px-4 py-3 text-left font-medium text-gray-600">Categorie</th>
-                        <th class="px-4 py-3 text-left font-medium text-gray-600">Disponibilite</th>
-                        <th class="px-4 py-3 text-left font-medium text-gray-600">Quantite</th>
+                        <th class="px-4 py-3 text-left font-medium text-gray-600">Catégorie</th>
+                        <th class="px-4 py-3 text-left font-medium text-gray-600">Disponibilité</th>
+                        <th class="px-4 py-3 text-left font-medium text-gray-600">Quantité</th>
                     </tr>
                 </thead>
                 <tbody class="divide-y divide-gray-200 bg-white">

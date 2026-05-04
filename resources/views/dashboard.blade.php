@@ -4,7 +4,7 @@
     @php
         $roleLabel = match (auth()->user()->role) {
             'admin' => 'administrateur',
-            'prep' => 'preparation',
+            'prep' => 'préparation',
             'cashier' => 'comptoir',
             default => auth()->user()->role,
         };
@@ -12,7 +12,7 @@
 
     <div class="mx-auto max-w-6xl px-4 py-8 sm:px-6 lg:px-8">
         <h1 class="text-2xl font-semibold text-gray-900">Tableau de bord</h1>
-        <p class="mt-2 text-sm text-gray-600">Connecte en tant que {{ $roleLabel }}.</p>
+        <p class="mt-2 text-sm text-gray-600">Connecté en tant que {{ $roleLabel }}.</p>
 
         <div class="mt-6 grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
             @can('manage-users')

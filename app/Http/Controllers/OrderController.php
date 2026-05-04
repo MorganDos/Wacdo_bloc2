@@ -43,7 +43,7 @@ class OrderController extends Controller
     {
         [$data, $pivotData] = $this->validatedPayload($request);
 
-        // La commande et ses lignes doivent etre enregistrees ensemble.
+        // La commande et ses lignes doivent être enregistrées ensemble.
         DB::transaction(function () use ($data, $pivotData): void {
             $order = Order::create([
                 'status' => 'pending',
@@ -128,7 +128,7 @@ class OrderController extends Controller
         return $candidate;
     }
 
-    // Selectionne les produits autorises pour la creation ou l'edition.
+    // Sélectionne les produits autorisés pour la création ou l'édition.
     private function orderableProducts(?Order $order = null)
     {
         $query = Product::query()
@@ -143,7 +143,7 @@ class OrderController extends Controller
 
         return $query
             ->where(function ($builder) use ($selectedProductIds): void {
-                // En edition, les produits deja choisis restent visibles meme s'ils sont devenus indisponibles.
+                // En édition, les produits déjà choisis restent visibles même s'ils sont devenus indisponibles.
                 $builder
                     ->where('availability', 'available')
                     ->orWhereIn('id', $selectedProductIds);

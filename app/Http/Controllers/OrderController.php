@@ -43,7 +43,6 @@ class OrderController extends Controller
     {
         [$data, $pivotData] = $this->validatedPayload($request);
 
-        // La commande et ses lignes doivent être enregistrées ensemble.
         DB::transaction(function () use ($data, $pivotData): void {
             $order = Order::create([
                 'status' => 'pending',
@@ -171,7 +170,6 @@ class OrderController extends Controller
         }
 
         $pivotData = [];
-        // Transformation du formulaire en format attendu par sync().
         foreach ($data['product_ids'] as $productId) {
             $quantity = max(1, (int) ($data['quantities'][$productId] ?? 1));
             $pivotData[(int) $productId] = ['quantity' => $quantity];

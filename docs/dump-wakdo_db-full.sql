@@ -112,7 +112,7 @@ CREATE TABLE `migrations` (
   `migration` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `batch` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
 ('1', '0001_01_01_000000_create_users_table', '1'),
@@ -120,8 +120,7 @@ INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
 ('3', '2026_02_11_095223_create_orders_table', '1'),
 ('4', '2026_02_11_095730_create_order_product_table', '1'),
 ('5', '2026_03_07_100000_create_menus_table', '1'),
-('6', '2026_03_07_100100_create_menu_product_table', '1'),
-('7', '2026_03_10_120000_align_existing_schema_with_bloc2', '1');
+('6', '2026_03_07_100100_create_menu_product_table', '1');
 
 CREATE TABLE `order_product` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,

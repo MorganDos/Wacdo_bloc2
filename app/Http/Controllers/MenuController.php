@@ -106,7 +106,6 @@ class MenuController extends Controller
             'quantities.*' => 'nullable|integer|min:1',
         ]);
 
-        // Prépare les lignes de la table pivot menu_product.
         $pivotData = [];
         foreach ($data['product_ids'] as $productId) {
             $pivotData[(int) $productId] = [
